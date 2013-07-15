@@ -24,13 +24,13 @@
     /* Carousel base class */
     .carousel {
       margin-bottom: 60px;
-	  
+	  font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      text-align: center;
     }
 
     .carousel .container {
       position: relative;
       z-index: 9;
-	  text-align: center;
     }
 
     .carousel .item {
@@ -104,10 +104,7 @@
       body{
         font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
+
       p.lead {
         padding-top: 1.5%;
         font-size: 24px;
@@ -294,7 +291,7 @@
             <div class="carousel-caption">
               <h1>Kahuna</h1>
               <p class="lead">En construcción...</p>
-              <a href="#Registrate" class="btn btn-info btn-large">Regístrate</a>
+              <a href="#Registrate" class="btn btn-warning btn-large">Regístrate</a>
             </div>
           </div>
         </div>
@@ -364,8 +361,29 @@
     
           <div id="Registrate" class="featurette">
             <img class="featurette-image pull-right" src="http://twitter.github.io/bootstrap/assets/img/examples/browser-icon-chrome.png">
-            <h2 class="featurette-heading">Regístrate <span class="muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <h2 class="featurette-heading">¿Eres nuevo en Kahuna? <span class="muted">Regístrate</span></h2>
+                <form class="form-horizontal">
+                  <div class="control-group warning">
+                    <label class="control-label" for="inputUsuario">Usuario</label>
+                    <div class="controls">
+                      <input type="text" id="inputUsuario" placeholder="Usuario">
+                    </div>
+                    </br>
+                    <label class="control-label" for="inputEmail">Email</label>
+                    <div class="controls">
+                      <input type="text" id="inputEmail" placeholder="Email">
+                    </div>
+                    </br>
+                    <label class="control-label" for="inputPassword">Password</label>
+                    <div class="controls">
+                      <input type="password" id="inputPassword" placeholder="Password">
+                    </div>
+                    </br>
+                    <div class="controls">
+                      <button type="submit" class="btn btn-warning">Registrarse</button>
+                    </div>
+                  </div>
+                </form>
           </div>
     
           <hr class="featurette-divider">
