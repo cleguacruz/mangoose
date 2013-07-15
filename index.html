@@ -17,74 +17,7 @@
 	
 	<style type="text/css">
 	
-	/* RESPONSIVE CSS
-    -------------------------------------------------- */
-	/* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }
-	   .carousel .item {
-         height: 500px;
-       }
-       .carousel img {
-         width: auto;
-         height: 500px;
-       }
-      }
 
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-	   .carousel {
-		margin-left: -20px;
-		margin-right: -20px;
-	  }
-	  .carousel .container {
-
-	  }
-	  .carousel .item {
-		height: 300px;
-	  }
-	  .carousel img {
-		width: auto;
-		height: 300px;
-	  }
-	  .carousel-caption {
-		width: 65%;
-		padding: 0 70px;
-		margin-top: 100px;
-	  }
-	  .carousel-caption h1 {
-		font-size: 30px;
-	  }
-	  .carousel-caption .lead,
-	  .carousel-caption .btn {
-		font-size: 18px;
-	  }
-      }
-	  
-	/*Login*/
-	.login {
-	  margin-top: 5px;
-	  width: 150px;
-	  margin-left: 15px;
-    }
-	
 	/* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
 
@@ -218,6 +151,100 @@
         color: #00aaff;
       }
 	  
+	  /* RESPONSIVE CSS
+    -------------------------------------------------- */
+	/* Large desktop */
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
+
+    @media (max-width: 979px) {
+	   .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+	   .carousel .item {
+         height: 500px;
+       }
+       .carousel img {
+         width: auto;
+         height: 500px;
+       }
+
+      .featurette {
+        height: auto;
+        padding: 0;
+      }
+      .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 40%;
+        margin: 0 auto 20px;
+      }
+    }
+
+
+    @media (max-width: 767px) {
+      .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+	   .carousel {
+		margin-left: -20px;
+		margin-right: -20px;
+	  }
+	  .carousel .container {
+
+	  }
+	  .carousel .item {
+		height: 300px;
+	  }
+	  .carousel img {
+		width: auto;
+		height: 300px;
+	  }
+	  .carousel-caption {
+		width: 65%;
+		padding: 0 70px;
+		margin-top: 100px;
+	  }
+	  .carousel-caption h1 {
+		font-size: 30px;
+	  }
+	  .carousel-caption .lead,
+	  .carousel-caption .btn {
+		font-size: 18px;
+	  }
+
+      .featurette-heading {
+        font-size: 30px;
+      }
+      .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+
+    }
+	  
     </style>
   </head>
   <body>
@@ -235,25 +262,17 @@
           </button>
           <a class="brand" href="#">Kahuna</a>
           <div class="nav-collapse collapse">
-            <ul class="nav pull-right">
+            <ul class="nav pull-left">
               <li><a href="#Registrate">Regístrate</a></li>
               <li><a href="#Caracteristicas">¿Qué es?</a></li>
               <li><a href="#FAQ">FAQ's</a></li>
-              
-              <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-              <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Login<b class="caret"></b></a>
-                  <ul class="dropdown-menu" style= "width: 200px; height: 220px">
-                  	<li class="nav-header">Usuario</li>
-                    <li><input type="text" class="login"></li>
-                    <li class="nav-header">Password</li>
-                    <li><input type="text" class="login"></li>
-                    <li class="text-warning"><small><center>¿Has olvidado la contraseña?</center></small></li>
-                    <center><button class="btn btn-warning">Cancelar</button>
-                    <button class="btn btn-info">Entrar</button></center>
-                  </ul>
-			  </li>
             </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Usuario">
+              <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn btn-info">Entrar</button>
+            </form>
+            
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -265,7 +284,7 @@
     <div id="myCarousel" class="carousel slide">
       <div class="carousel-inner">
         <div class="item active">
-          <img src="http://twitter.github.io/bootstrap/assets/img/examples/slide-01.jpg" alt="">
+          <img src="http://twitter.github.io/bootstrap/assets/img/examples/slide-03.jpg" alt="">
           <div class="container">
             <div class="carousel-caption">
               <h1>Kahuna</h1>
@@ -284,7 +303,7 @@
     <div class="container">
         <div class="row-fluid pitch">
             <div class="span5 offset1 video">
-            <video width="480" height="270" controls>
+            <video controls>
                 <source src="" type="video/mp4">
             </video>             
             </div>
